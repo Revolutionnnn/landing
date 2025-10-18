@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MBO - Servicios de desarrollo web y soluciones digitales">
+    <title>MBO - Desarrollo & Soluciones Digitales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <h2>MBO</h2>
+            </div>
+                <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+                <li><a href="#proyectos" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-i18n="nav.about">Sobre Mí</a></li>
+                <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content container">
+            <div class="hero-text">
+                <span class="hero-tag" data-i18n="hero.tag">Desarrollador Profesional</span>
+                <h1 class="hero-title"><span data-i18n="hero.title1">Transformando ideas en </span><span class="gradient-text" data-i18n="hero.title2">soluciones digitales</span></h1>
+                <p class="hero-description" data-i18n="hero.description">
+                    Desarrollo web moderno, aplicaciones personalizadas y consultoría tecnológica 
+                    para impulsar tu negocio al siguiente nivel.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#servicios" class="btn btn-primary" data-i18n="hero.btn1">Ver Servicios</a>
+                    <a href="#contacto" class="btn btn-secondary" data-i18n="hero.btn2">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <span class="icon">💻</span>
+                    <span>Web Dev</span>
+                </div>
+                <div class="floating-card card-2">
+                    <span class="icon">🚀</span>
+                    <span>Apps</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="icon">⚡</span>
+                    <span>Performance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="services.tag">¿Qué ofrezco?</span>
+                <h2 class="section-title" data-i18n="services.title">Servicios Profesionales</h2>
+                <p class="section-description" data-i18n="services.subtitle">
+                    Soluciones integrales adaptadas a tus necesidades
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3 class="service-title" data-i18n="services.web.title">Desarrollo Web</h3>
+                    <p class="service-description" data-i18n="services.web.description">
+                        Sitios web modernos, responsivos y optimizados para SEO. 
+                        Desde landing pages hasta aplicaciones web completas.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.web.feature1">Diseño responsive</li>
+                        <li data-i18n="services.web.feature2">Optimización SEO</li>
+                        <li data-i18n="services.web.feature3">Alto rendimiento</li>
+                    </ul>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge" data-i18n="services.badge">Popular</div>
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title" data-i18n="services.webapp.title">Aplicaciones Web</h3>
+                    <p class="service-description" data-i18n="services.webapp.description">
+                        Aplicaciones web interactivas con tecnologías modernas como 
+                        React, Vue, Angular y frameworks backend robustos.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.webapp.feature1">SPA & PWA</li>
+                        <li data-i18n="services.webapp.feature2">APIs REST/GraphQL</li>
+                        <li data-i18n="services.webapp.feature3">Base de datos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title" data-i18n="services.mobile.title">Aplicaciones Mobile</h3>
+                    <p class="service-description" data-i18n="services.mobile.description">
+                        Desarrollo de aplicaciones móviles multiplataforma 
+                        para Android e iOS con React Native y las mejores prácticas del mercado.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.mobile.feature1">Android & iOS</li>
+                        <li data-i18n="services.mobile.feature2">React Native</li>
+                        <li data-i18n="services.mobile.feature3">Apps nativas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title" data-i18n="services.automation.title">Automatización</h3>
+                    <p class="service-description" data-i18n="services.automation.description">
+                        Automatización de procesos, scripts personalizados y 
+                        herramientas que optimizan tu flujo de trabajo.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.automation.feature1">Scripts Python/Node.js</li>
+                        <li data-i18n="services.automation.feature2">Integración APIs</li>
+                        <li data-i18n="services.automation.feature3">Bots y workflows</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title" data-i18n="services.maintenance.title">Mantenimiento</h3>
+                    <p class="service-description" data-i18n="services.maintenance.description">
+                        Soporte técnico, actualizaciones y mantenimiento continuo 
+                        de tus proyectos digitales.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.maintenance.feature1">Actualizaciones</li>
+                        <li data-i18n="services.maintenance.feature2">Monitoreo 24/7</li>
+                        <li data-i18n="services.maintenance.feature3">Soporte técnico</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title" data-i18n="services.consulting.title">Consultoría</h3>
+                    <p class="service-description" data-i18n="services.consulting.description">
+                        Asesoría tecnológica para elegir las mejores soluciones 
+                        y estrategias para tu proyecto o negocio.
+                    </p>
+                    <ul class="service-features">
+                        <li data-i18n="services.consulting.feature1">Análisis técnico</li>
+                        <li data-i18n="services.consulting.feature2">Arquitectura</li>
+                        <li data-i18n="services.consulting.feature3">Mejores prácticas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="tech.tag">Tecnologías</span>
+                <h2 class="section-title" data-i18n="tech.title">Stack Tecnológico</h2>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span class="tech-name">React</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">TypeScript</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Node.js</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">NestJS</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Django</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">.NET</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Python</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">PostgreSQL</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">MongoDB</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">React Native</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Docker</span>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-name">Git</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects.tag">Proyectos</span>
+                <h2 class="section-title" data-i18n="projects.title">Mis Proyectos</h2>
+                <p class="section-description" data-i18n="projects.subtitle">
+                    Algunos de los proyectos en los que estoy trabajando
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card featured-project">
+                    <div class="project-status">
+                        <span class="status-badge in-progress" data-i18n="projects.status">En Desarrollo</span>
+                    </div>
+                    <div class="project-icon">💰</div>
+                    <h3 class="project-title" data-i18n="projects.app1.title">App de Cobros</h3>
+                    <p class="project-description" data-i18n="projects.app1.description">
+                        Aplicación móvil para gestión de cobros y seguimiento de pagos. 
+                        Desarrollada con React Native para Android.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-status-text" data-i18n="projects.app1.coming">🚀 Próximamente en Play Store</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔜</div>
+                    <h3 class="project-title" data-i18n="projects.upcoming.title">Próximos Proyectos</h3>
+                    <p class="project-description" data-i18n="projects.upcoming.description">
+                        Estoy constantemente trabajando en nuevos proyectos y soluciones innovadoras. 
+                        Mantente atento para ver las novedades.
+                    </p>
+                    <div class="project-footer">
+                        <a href="#contacto" class="project-link" data-i18n="projects.upcoming.link">Contáctame para saber más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-mi">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag" data-i18n="about.tag">Sobre Mí</span>
+                    <h2 class="section-title">Michael Buritica</h2>
+                    <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.3rem;" data-i18n="about.role">Desarrollador Full Stack</h3>
+                    <p class="about-description" data-i18n="about.description1">
+                        Soy Michael Buritica, un desarrollador apasionado por crear soluciones digitales innovadoras 
+                        y eficientes. Con experiencia en múltiples tecnologías y frameworks, me 
+                        especializo en transformar ideas en productos digitales funcionales y escalables.
+                    </p>
+                    <p class="about-description" data-i18n="about.description2">
+                        Mi enfoque se centra en escribir código limpio, mantenible y en seguir 
+                        las mejores prácticas de la industria. Me mantengo actualizado con las 
+                        últimas tendencias tecnológicas para ofrecer soluciones modernas y eficientes.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-i18n="about.stat1">Proyectos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label" data-i18n="about.stat2">Satisfacción</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label" data-i18n="about.stat3">Soporte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="code-snippet">
+                            <div class="code-line"><span class="code-keyword">const</span> developer = {</div>
+                            <div class="code-line">  <span class="code-property">name:</span> <span class="code-string">'MBO'</span>,</div>
+                            <div class="code-line">  <span class="code-property">role:</span> <span class="code-string">'Full Stack'</span>,</div>
+                            <div class="code-line">  <span class="code-property">passion:</span> <span class="code-string">'Code'</span>,</div>
+                            <div class="code-line">  <span class="code-property">quality:</span> <span class="code-number">100</span></div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Contáctame</span>
+                <h2 class="section-title" data-i18n="contact.title">¿Tienes un proyecto en mente?</h2>
+                <p class="section-description" data-i18n="contact.subtitle">
+                    Hablemos sobre cómo puedo ayudarte a llevarlo a cabo
+                </p>
+            </div>
+
+            <div class="contact-info-centered">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:customer@appmbo.com">customer@appmbo.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank">michael-buritica</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🐙</div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/Revolutionnnn" target="_blank">Revolutionnnn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>MBO</h3>
+                    <p data-i18n="footer.tagline">Desarrollando el futuro, un proyecto a la vez.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer.links">Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-i18n="footer.follow">Sígueme</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Revolutionnnn" target="_blank" class="social-link">GitHub</a>
+                        <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 MBO. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
