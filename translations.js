@@ -226,12 +226,19 @@ function updateContent(lang) {
         const keys = key.split('.');
         let translation = translations[lang];
 
-        // Navigate through nested object
+        // Navigate through nested object with safety check
+        let valid = true;
         for (const k of keys) {
-            translation = translation[k];
+            if (translation && typeof translation === 'object' && k in translation) {
+                translation = translation[k];
+            } else {
+                valid = false;
+                console.warn(`Translation key not found: ${key} for language: ${lang}`);
+                break;
+            }
         }
 
-        if (translation) {
+        if (valid && translation) {
             element.textContent = translation;
         }
     });
