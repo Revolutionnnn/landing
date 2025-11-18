@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -52,17 +52,22 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="floating-card card-1">
-                    <span class="icon">💻</span>
-                    <span>Web Dev</span>
-                </div>
-                <div class="floating-card card-2">
-                    <span class="icon">🚀</span>
-                    <span>Apps</span>
-                </div>
-                <div class="floating-card card-3">
-                    <span class="icon">⚡</span>
-                    <span>Performance</span>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="close"></span>
+                            <span class="minimize"></span>
+                            <span class="maximize"></span>
+                        </div>
+                        <div class="terminal-title">developer.exe</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="code-line"><span class="prompt">></span> <span class="cmd">npm</span> install <span class="args">success</span></div>
+                        <div class="code-line"><span class="success">✔</span> Package installed successfully</div>
+                        <div class="code-line"><span class="prompt">></span> <span class="cmd">git</span> commit -m <span class="string">"Building the future"</span></div>
+                        <div class="code-line"><span class="prompt">></span> <span class="cmd">run</span> <span class="args">innovation</span></div>
+                        <div class="typing-effect">Initializing...<span class="cursor">_</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,42 +181,36 @@
                 <h2 class="section-title" data-i18n="tech.title">Stack de Desarrollo</h2>
             </div>
             
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <span class="tech-name">React</span>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Frontend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">TypeScript</div>
+                        <div class="tech-item">React Native</div>
+                        <div class="tech-item">Next.js</div>
+                        <div class="tech-item">Tailwind</div>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <span class="tech-name">TypeScript</span>
+                <div class="tech-category">
+                    <h3>Backend</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">NestJS</div>
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">Django</div>
+                        <div class="tech-item">.NET</div>
+                    </div>
                 </div>
-                <div class="tech-item">
-                    <span class="tech-name">Node.js</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">NestJS</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">Django</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">.NET</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">Python</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">PostgreSQL</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">MongoDB</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">React Native</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">Docker</span>
-                </div>
-                <div class="tech-item">
-                    <span class="tech-name">Git</span>
+                <div class="tech-category">
+                    <h3>Database & DevOps</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">PostgreSQL</div>
+                        <div class="tech-item">MongoDB</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">Git</div>
+                        <div class="tech-item">AWS</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -224,40 +223,81 @@
                 <span class="section-tag" data-i18n="projects.tag">Proyectos</span>
                 <h2 class="section-title" data-i18n="projects.title">Mis Proyectos</h2>
                 <p class="section-description" data-i18n="projects.subtitle">
-                    Algunos de los proyectos en los que estoy trabajando
+                    Repositorios destacados y aplicaciones en producción
                 </p>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card featured-project">
-                    <div class="project-status">
-                        <span class="status-badge in-progress" data-i18n="projects.status">En Desarrollo</span>
+                <!-- Project 1 -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-title-wrapper">
+                            <span class="repo-icon">📚</span>
+                            <h3 class="repo-title" data-i18n="projects.app1.title">App de Cobros</h3>
+                        </div>
+                        <span class="repo-visibility">Public</span>
                     </div>
-                    <div class="project-icon">💰</div>
-                    <h3 class="project-title" data-i18n="projects.app1.title">App de Cobros</h3>
-                    <p class="project-description" data-i18n="projects.app1.description">
+                    <p class="repo-description" data-i18n="projects.app1.description">
                         Aplicación móvil para gestión de cobros y seguimiento de pagos. 
                         Desarrollada con React Native para Android.
                     </p>
-                    <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Node.js</span>
+                    <div class="repo-stats">
+                        <div class="repo-lang">
+                            <span class="lang-color" style="background-color: #3178c6;"></span>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="repo-stars">
+                            <span>⭐ 12</span>
+                        </div>
+                        <div class="repo-forks">
+                            <span>🔱 4</span>
+                        </div>
                     </div>
-                    <div class="project-footer">
-                        <span class="project-status-text" data-i18n="projects.app1.coming">🚀 Próximamente en Play Store</span>
+                    <div class="repo-footer">
+                        <span class="status-badge in-progress" data-i18n="projects.status">En Desarrollo</span>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-icon">🔜</div>
-                    <h3 class="project-title" data-i18n="projects.upcoming.title">Próximos Proyectos</h3>
-                    <p class="project-description" data-i18n="projects.upcoming.description">
-                        Estoy constantemente trabajando en nuevos proyectos y soluciones innovadoras. 
-                        Mantente atento para ver las novedades.
+                <!-- Project 2 -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-title-wrapper">
+                            <span class="repo-icon">⚛️</span>
+                            <h3 class="repo-title">Crypto Dashboard</h3>
+                        </div>
+                        <span class="repo-visibility">Public</span>
+                    </div>
+                    <p class="repo-description">
+                        Dashboard en tiempo real para seguimiento de criptomonedas usando CoinGecko API.
                     </p>
-                    <div class="project-footer">
-                        <a href="#contacto" class="project-link" data-i18n="projects.upcoming.link">Contáctame para saber más →</a>
+                    <div class="repo-stats">
+                        <div class="repo-lang">
+                            <span class="lang-color" style="background-color: #f1e05a;"></span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="repo-stars">
+                            <span>⭐ 8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="repo-card">
+                    <div class="repo-header">
+                        <div class="repo-title-wrapper">
+                            <span class="repo-icon">🐍</span>
+                            <h3 class="repo-title">Automation Scripts</h3>
+                        </div>
+                        <span class="repo-visibility">Private</span>
+                    </div>
+                    <p class="repo-description">
+                        Colección de scripts de automatización para tareas diarias y scraping.
+                    </p>
+                    <div class="repo-stats">
+                        <div class="repo-lang">
+                            <span class="lang-color" style="background-color: #3572A5;"></span>
+                            <span>Python</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,41 +311,53 @@
                 <div class="about-text">
                     <span class="section-tag" data-i18n="about.tag">Sobre Mí</span>
                     <h2 class="section-title">Michael Buritica</h2>
-                    <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.3rem;" data-i18n="about.role">Desarrollador Full Stack & Blockchain</h3>
+                    <h3 class="role-title" data-i18n="about.role">Desarrollador Full Stack & Blockchain</h3>
                     <p class="about-description" data-i18n="about.description1">
                         Soy Michael Buritica, un desarrollador apasionado por crear soluciones digitales innovadoras 
                         y eficientes. Con experiencia en múltiples tecnologías y frameworks, me 
                         especializo en transformar ideas en productos digitales funcionales y escalables.
                     </p>
-                    <p class="about-description" data-i18n="about.description2">
-                        Mi enfoque se centra en escribir código limpio, mantenible y en seguir 
-                        las mejores prácticas de la industria. Me mantengo actualizado con las 
-                        últimas tendencias tecnológicas para ofrecer soluciones modernas y eficientes.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label" data-i18n="about.stat1">Proyectos</span>
+                    
+                    <div class="git-stats">
+                        <div class="git-stat-item">
+                            <span class="count">50+</span>
+                            <span class="label">Repos</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label" data-i18n="about.stat2">Satisfacción</span>
+                        <div class="git-stat-item">
+                            <span class="count">1.2k</span>
+                            <span class="label">Commits</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label" data-i18n="about.stat3">Soporte</span>
+                        <div class="git-stat-item">
+                            <span class="count">300+</span>
+                            <span class="label">PRs</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="about-card">
-                        <div class="code-snippet">
-                            <div class="code-line"><span class="code-keyword">const</span> developer = {</div>
-                            <div class="code-line">  <span class="code-property">name:</span> <span class="code-string">'MBO'</span>,</div>
-                            <div class="code-line">  <span class="code-property">role:</span> <span class="code-string">'Full Stack'</span>,</div>
-                            <div class="code-line">  <span class="code-property">passion:</span> <span class="code-string">'Code'</span>,</div>
-                            <div class="code-line">  <span class="code-property">quality:</span> <span class="code-number">100</span></div>
-                            <div class="code-line">};</div>
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="filename">profile.json</span>
+                        </div>
+                        <div class="window-content">
+<pre><code><span class="key">"name"</span>: <span class="string">"Michael Buritica"</span>,
+<span class="key">"role"</span>: <span class="string">"Full Stack Developer"</span>,
+<span class="key">"location"</span>: <span class="string">"Remote"</span>,
+<span class="key">"skills"</span>: [
+  <span class="string">"JavaScript"</span>,
+  <span class="string">"Python"</span>,
+  <span class="string">"Solidity"</span>
+],
+<span class="key">"hobbies"</span>: [
+  <span class="string">"Coding"</span>,
+  <span class="string">"Gaming"</span>,
+  <span class="string">"Crypto"</span>
+],
+<span class="key">"status"</span>: <span class="string">"Open to work"</span></code></pre>
                         </div>
                     </div>
                 </div>
@@ -318,33 +370,32 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-i18n="contact.tag">Contáctame</span>
-                <h2 class="section-title" data-i18n="contact.title">¿Tienes un proyecto en mente?</h2>
-                <p class="section-description" data-i18n="contact.subtitle">
-                    Hablemos sobre cómo puedo ayudarte a llevarlo a cabo
-                </p>
+                <h2 class="section-title" data-i18n="contact.title">Start a Connection</h2>
             </div>
 
-            <div class="contact-info-centered">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div>
-                        <h4>Email</h4>
-                        <a href="mailto:customer@appmbo.com">customer@appmbo.com</a>
+            <div class="contact-terminal">
+                <div class="terminal-line">
+                    <span class="prompt">user@web:~$</span> <span class="cmd">ssh</span> michael@mbo.dev
+                </div>
+                <div class="terminal-line">
+                    <span class="output">Connecting to michael@mbo.dev... Connected.</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="prompt">michael@mbo:~$</span> <span class="cmd">cat</span> contact_info.txt
+                </div>
+                <div class="contact-output">
+                    <div class="contact-row">
+                        <span class="icon">📧</span> <a href="mailto:customer@appmbo.com">customer@appmbo.com</a>
+                    </div>
+                    <div class="contact-row">
+                        <span class="icon">💼</span> <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank">linkedin.com/in/michael-buritica</a>
+                    </div>
+                    <div class="contact-row">
+                        <span class="icon">🐙</span> <a href="https://github.com/Revolutionnnn" target="_blank">github.com/Revolutionnnn</a>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank">michael-buritica</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">🐙</div>
-                    <div>
-                        <h4>GitHub</h4>
-                        <a href="https://github.com/Revolutionnnn" target="_blank">Revolutionnnn</a>
-                    </div>
+                <div class="terminal-line">
+                    <span class="prompt">michael@mbo:~$</span> <span class="cursor">_</span>
                 </div>
             </div>
         </div>
