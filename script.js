@@ -201,3 +201,35 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Card Hover Effect (Mouse Tracking)
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+    });
+});
+
+// Terminal Typing Effect
+const typingElement = document.querySelector('.typing-effect');
+if (typingElement) {
+    const text = "Initializing system... Loading modules... Ready to code.";
+    let i = 0;
+    
+    // Clear initial content
+    typingElement.innerHTML = '<span class="cursor">_</span>';
+    
+    function typeWriter() {
+        if (i < text.length) {
+            typingElement.innerHTML = text.substring(0, i + 1) + '<span class="cursor">_</span>';
+            i++;
+            setTimeout(typeWriter, 50);
+        }
+    }
+    
+    // Start typing after a delay
+    setTimeout(typeWriter, 1000);
+}
