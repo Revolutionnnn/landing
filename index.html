@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta -->
-    <title>MBO Studio — Custom Landing Pages That Convert | US-Based</title>
-    <meta name="description" content="We design and build high-converting landing pages for businesses across the United States. SEO-optimized, mobile-first, and conversion-focused. Get a free quote today.">
-    <meta name="keywords" content="landing page design, landing page development, conversion optimization, SEO landing pages, custom landing pages, US landing page agency">
-    <meta name="author" content="MBO Studio">
+    <title>Michael Buritica — Software Engineer</title>
+    <meta name="description" content="Software Engineer especializado en Linux, DevOps, Inteligencia Artificial, Full Stack, Arquitectura, Liderazgo de proyectos, Blockchain y Contenedores.">
+    <meta name="keywords" content="Software Engineer, DevOps, Full Stack, Blockchain, Linux, Docker, Kubernetes, IA, Arquitectura de software, Michael Buritica">
+    <meta name="author" content="Michael Buritica">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://appmbo.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="MBO Studio">
-    <meta property="og:title" content="MBO Studio — Custom Landing Pages That Convert">
-    <meta property="og:description" content="We build high-converting, SEO-optimized landing pages for US businesses. Custom design, fast performance, measurable results.">
+    <meta property="og:site_name" content="Michael Buritica">
+    <meta property="og:title" content="Michael Buritica — Software Engineer">
+    <meta property="og:description" content="Software Engineer especializado en Linux, DevOps, IA, Full Stack, Arquitectura, Blockchain y Contenedores.">
     <meta property="og:url" content="https://appmbo.com/">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MBO Studio — Landing Pages That Convert">
-    <meta name="twitter:description" content="Custom landing pages built for conversion. SEO-optimized, mobile-first, and designed to grow your business.">
+    <meta name="twitter:title" content="Michael Buritica — Software Engineer">
+    <meta name="twitter:description" content="Software Engineer especializado en Linux, DevOps, IA, Full Stack, Arquitectura, Blockchain y Contenedores.">
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "MBO Studio",
-        "description": "Custom landing page design and development for US businesses. SEO-optimized, conversion-focused websites.",
+        "@type": "Person",
+        "name": "Michael Buritica",
+        "jobTitle": "Software Engineer",
         "url": "https://appmbo.com",
         "email": "buriticamaicol@outlook.com",
-        "areaServed": {
-            "@type": "Country",
-            "name": "United States"
-        },
-        "serviceType": "Landing Page Design & Development",
-        "offers": {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Custom Landing Page",
-                "description": "Professionally designed, high-converting landing page with SEO optimization"
-            }
-        }
+        "sameAs": [
+            "https://github.com/revolutionnnn",
+            "https://www.linkedin.com/in/michael-buritica/"
+        ],
+        "knowsAbout": [
+            "Linux", "DevOps", "Inteligencia Artificial", "Full Stack Development",
+            "Arquitectura de Software", "Liderazgo de Proyectos", "Blockchain", "Contenedores"
+        ]
     }
     </script>
 
@@ -60,570 +55,224 @@
     <!-- Header -->
     <header class="header" role="banner">
         <nav class="nav container" aria-label="Main navigation">
-            <a href="#" class="nav-logo" aria-label="MBO Studio Home">
-                <h2>MBO</h2>
-                <span class="logo-sub">Studio</span>
+            <a href="#inicio" class="nav-logo" aria-label="Michael Buritica">
+                <span class="logo-mark">MB</span>
+                <span class="logo-sub">Michael Buritica</span>
             </a>
             <ul class="nav-menu" id="navMenu" role="menubar">
-                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
-                <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
-                <li role="none"><a href="#work" class="nav-link" role="menuitem">Industries</a></li>
-                <li role="none"><a href="#process" class="nav-link" role="menuitem">Process</a></li>
-                <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">Get a Free Quote</a></li>
+                <li role="none"><a href="#inicio" class="nav-link" role="menuitem" data-i18n="nav.home">Inicio</a></li>
+                <li role="none"><a href="#habilidades" class="nav-link" role="menuitem" data-i18n="nav.skills">Habilidades</a></li>
+                <li role="none"><a href="#contacto" class="nav-link nav-cta" role="menuitem" data-i18n="nav.contact">Contacto</a></li>
             </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="nav-right">
+                <div class="language-switcher" role="group" aria-label="Language switcher">
+                    <button class="lang-btn active" data-lang="es" aria-label="Español">ES</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero" id="home" aria-labelledby="hero-heading">
+        <section class="hero" id="inicio" aria-labelledby="hero-heading">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <span class="hero-badge">Serving Businesses Across the U.S.</span>
+                    <span class="hero-badge"><span class="status-dot"></span><span data-i18n="hero.badge">Disponible para nuevos proyectos</span></span>
+                    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Hola, soy</p>
                     <h1 id="hero-heading" class="hero-title">
-                        Professional Landing Pages<br>
-                        <span class="gradient-text">That Drive Results</span>
+                        <span data-i18n="hero.welcome">Bienvenido a mi página</span>
                     </h1>
-                    <p class="hero-description">
-                        Custom-designed landing pages for construction, healthcare, retail, and professional services.
-                        Built to attract customers and grow your business.
+                    <h2 class="hero-name">Michael Buritica</h2>
+                    <p class="hero-role">
+                        <span class="gradient-text" data-i18n="hero.role">Software Engineer</span>
                     </p>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <span class="stat-number" data-target="200">0</span>
-                            <span class="stat-label">Projects Delivered</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="stat-number" data-target="40">0</span>
-                            <span class="stat-label stat-percent">% Avg. Conversion Lift</span>
-                        </div>
-                        <div class="hero-stat">
-                            <span class="stat-number" data-target="98">0</span>
-                            <span class="stat-label stat-percent">% Client Satisfaction</span>
-                        </div>
-                    </div>
+                    <p class="hero-description" data-i18n="hero.description">
+                        Construyo sistemas distribuidos, automatizo infraestructura y lidero equipos para entregar productos digitales robustos. Especializado en Linux, DevOps, IA, Full Stack y Blockchain.
+                    </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-                        <a href="#work" class="btn btn-secondary">View Our Work</a>
+                        <a href="#habilidades" class="btn btn-primary" data-i18n="hero.btn1">Ver habilidades</a>
+                        <a href="#contacto" class="btn btn-secondary" data-i18n="hero.btn2">Contactar</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/revolutionnnn" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1.8 1.7.8 1.7.6-1.1 1.9-.8 2.4-.6.1.9.4 1.5.7 1.8-2.5.3-5.2 1.3-5.2 5.7 0 1.3.5 2.3 1.2 3.1-.1.3-.5 1.5.1 3.1 0 0 1 .3 3.3-1.2 1 .3 2 .4 3 .4s2-.1 3-.4c2.3 1.5 3.3 1.2 3.3 1.2.6-1.6.2-2.8.1-3.1.7-.8 1.2-1.8 1.2-3.1 0-4.4-2.7-5.4-5.2-5.7.4-.3.7-1 .7-2v-2c0-.3.2-.7.8-.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5zM8 19H5v-9h3v9zM6.5 8.2c-.97 0-1.75-.79-1.75-1.76S5.53 4.7 6.5 4.7s1.75.79 1.75 1.76S7.47 8.2 6.5 8.2zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93s-1.62.5-1.62 1.93V19h-3v-9h2.9v1.3h.04c.34-.7 1.32-1.5 2.66-1.5 2.86 0 3.4 1.8 3.4 4.3V19z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:buriticamaicol@outlook.com" class="social-link" aria-label="Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>Email</span>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="dashboard-preview">
-                        <div class="db-header">
-                            <div class="db-dots">
-                                <span></span><span></span><span></span>
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="tb close"></span>
+                                <span class="tb minimize"></span>
+                                <span class="tb maximize"></span>
                             </div>
-                            <span class="db-title">Conversion Dashboard</span>
+                            <span class="terminal-title">maicol@dev: ~</span>
                         </div>
-                        <div class="db-body">
-                            <div class="db-metric main">
-                                <span class="db-value">12,847</span>
-                                <span class="db-tag up">+24.3%</span>
-                                <span class="db-label">Monthly Visitors</span>
-                            </div>
-                            <div class="db-row">
-                                <div class="db-metric">
-                                    <span class="db-value">8.2%</span>
-                                    <span class="db-tag up">+2.1%</span>
-                                    <span class="db-label">Conversion Rate</span>
-                                </div>
-                                <div class="db-metric">
-                                    <span class="db-value">0.9s</span>
-                                    <span class="db-tag down">-0.3s</span>
-                                    <span class="db-label">Load Time</span>
-                                </div>
-                            </div>
-                            <div class="db-chart">
-                                <div class="chart-bar" style="height:60%"></div>
-                                <div class="chart-bar" style="height:80%"></div>
-                                <div class="chart-bar active" style="height:95%"></div>
-                                <div class="chart-bar" style="height:70%"></div>
-                                <div class="chart-bar" style="height:85%"></div>
-                                <div class="chart-bar" style="height:90%"></div>
-                                <div class="chart-bar active" style="height:100%"></div>
-                            </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div class="code-line"><span class="prompt">$</span> <span class="cmd-text">whoami</span></div>
+                            <div class="code-line"><span class="output">maicol_buritica</span></div>
+                            <div class="code-line"><span class="prompt">$</span> <span class="cmd-text">cat profile.txt</span></div>
+                            <div class="code-line"><span class="output">role: <span class="hl-violet">Software Engineer</span></span></div>
+                            <div class="code-line"><span class="output">focus: <span class="hl-coral">DevOps · IA · Full Stack</span></span></div>
+                            <div class="code-line"><span class="output">stack: <span class="hl-green">Linux · Docker · K8s · Web3</span></span></div>
+                            <div class="code-line"><span class="prompt">$</span> <span class="cmd-text">&nbsp;</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Industries Served -->
-        <section class="trusted" aria-label="Industries served">
-            <div class="container">
-                <p class="trusted-label">Landing pages for every industry</p>
-                <div class="trusted-logos">
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-                        Construction
-                    </div>
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        Healthcare
-                    </div>
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                        Retail
-                    </div>
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                        Dental
-                    </div>
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                        Professional Services
-                    </div>
-                    <div class="trusted-logo">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        Local Business
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services" id="services" aria-labelledby="services-heading">
+        <!-- Skills Section -->
+        <section class="skills" id="habilidades" aria-labelledby="skills-heading">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Our Services</span>
-                    <h2 id="services-heading" class="section-title">Everything You Need to <span class="gradient-text">Convert More</span></h2>
-                    <p class="section-description">
-                        End-to-end landing page services designed to maximize your ROI
+                    <span class="section-tag" data-i18n="skills.tag">Habilidades</span>
+                    <h2 id="skills-heading" class="section-title"><span data-i18n="skills.title">En qué soy</span> <span class="gradient-text" data-i18n="skills.titleAccent">fuerte</span></h2>
+                    <p class="section-description" data-i18n="skills.subtitle">
+                        Un conjunto de disciplinas que combino para entregar productos completos, de la arquitectura al deploy.
                     </p>
                 </div>
-                <div class="services-grid">
-                    <article class="service-card featured">
-                        <span class="featured-flag">Most Popular</span>
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg>
                         </div>
-                        <h3 class="service-title">Custom Landing Page Design</h3>
-                        <p class="service-description">
-                            Bespoke, conversion-focused designs tailored to your brand identity and target audience. No templates — every page is crafted from scratch.
-                        </p>
-                        <ul class="service-features">
-                            <li>Custom UI/UX Design</li>
-                            <li>Brand-First Approach</li>
-                            <li>Mobile-First Responsive</li>
-                            <li>Unlimited Revisions</li>
+                        <h3 class="skill-title" data-i18n="skills.linux.title">Linux & Sistemas</h3>
+                        <p class="skill-description" data-i18n="skills.linux.desc">Administración de servidores, shell scripting y entornos de producción robustos sobre Linux.</p>
+                        <ul class="skill-tags">
+                            <li>Bash</li><li>Shell</li><li>Systemd</li><li>Networking</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
                         </div>
-                        <h3 class="service-title">Development & Integration</h3>
-                        <p class="service-description">
-                            Clean, semantic HTML/CSS/JS built for speed. Seamless integration with your CRM, email marketing, analytics, and payment tools.
-                        </p>
-                        <ul class="service-features">
-                            <li>HTML5, CSS3, JavaScript</li>
-                            <li>CMS Integration</li>
-                            <li>API & Third-Party Tools</li>
-                            <li>Form & Payment Setup</li>
+                        <h3 class="skill-title" data-i18n="skills.devops.title">DevOps & CI/CD</h3>
+                        <p class="skill-description" data-i18n="skills.devops.desc">Pipelines automatizados, integración y despliegue continuo, infraestructura como código y monitorización.</p>
+                        <ul class="skill-tags">
+                            <li>CI/CD</li><li>GitHub Actions</li><li>Terraform</li><li>Prometheus</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v2H6a3 3 0 0 0-3 3v3a3 3 0 0 0 3 3v2a3 3 0 0 0 3 3h.5"/><path d="M12 2a3 3 0 0 1 3 3v2h3a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3v2a3 3 0 0 1-3 3h-.5"/><circle cx="12" cy="12" r="2"/></svg>
                         </div>
-                        <h3 class="service-title">SEO Optimization</h3>
-                        <p class="service-description">
-                            Built-in on-page SEO with semantic HTML, schema markup, meta optimization, and Core Web Vitals compliance for higher rankings.
-                        </p>
-                        <ul class="service-features">
-                            <li>On-Page SEO</li>
-                            <li>Schema Markup</li>
-                            <li>Core Web Vitals</li>
-                            <li>Keyword Research</li>
+                        <h3 class="skill-title" data-i18n="skills.ai.title">Inteligencia Artificial</h3>
+                        <p class="skill-description" data-i18n="skills.ai.desc">Integración de LLMs, RAG, agentes y automatización inteligente en productos reales.</p>
+                        <ul class="skill-tags">
+                            <li>LLMs</li><li>RAG</li><li>Agents</li><li>OpenAI API</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
                         </div>
-                        <h3 class="service-title">A/B Testing & CRO</h3>
-                        <p class="service-description">
-                            Data-driven optimization with A/B testing, heatmaps, and conversion rate analysis to continuously improve your landing page performance.
-                        </p>
-                        <ul class="service-features">
-                            <li>A/B Split Testing</li>
-                            <li>Heatmap Analysis</li>
-                            <li>Conversion Funnel Audit</li>
-                            <li>Performance Reports</li>
+                        <h3 class="skill-title" data-i18n="skills.fullstack.title">Full Stack</h3>
+                        <p class="skill-description" data-i18n="skills.fullstack.desc">Frontend y backend extremo a extremo: interfaces modernas, APIs y bases de datos performantes.</p>
+                        <ul class="skill-tags split">
+                            <li class="tag-group"><span class="tg-label">Front</span><span>React · Next.js</span></li>
+                            <li class="tag-group"><span class="tg-label">Back</span><span>Node · Python</span></li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
                         </div>
-                        <h3 class="service-title">Ongoing Optimization</h3>
-                        <p class="service-description">
-                            Continuous monitoring, updates, and iterative improvements to keep your landing page performing at its peak month after month.
-                        </p>
-                        <ul class="service-features">
-                            <li>Monthly Performance Audits</li>
-                            <li>Content Updates</li>
-                            <li>Technical Maintenance</li>
-                            <li>Priority Support</li>
+                        <h3 class="skill-title" data-i18n="skills.architecture.title">Decisiones de Arquitectura</h3>
+                        <p class="skill-description" data-i18n="skills.architecture.desc">Diseño sistemas escalables, tolerantes a fallos y orientados a eventos con el stack adecuado.</p>
+                        <ul class="skill-tags">
+                            <li>Microservicios</li><li>Event-driven</li><li>Scalability</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                         </div>
-                        <h3 class="service-title">Speed Optimization</h3>
-                        <p class="service-description">
-                            Lightning-fast load times with optimized assets, lazy loading, CDN delivery, and advanced caching strategies.
-                        </p>
-                        <ul class="service-features">
-                            <li>Google PageSpeed 90+</li>
-                            <li>Image Optimization</li>
-                            <li>CDN Configuration</li>
-                            <li>Code Minification</li>
+                        <h3 class="skill-title" data-i18n="skills.leadership.title">Liderazgo de Proyectos</h3>
+                        <p class="skill-description" data-i18n="skills.leadership.desc">Coordino equipos, defino hitos y traduzco objetivos de negocio en entregables técnicos.</p>
+                        <ul class="skill-tags">
+                            <li>Scrum</li><li>Mentoring</li><li>Roadmap</li>
                         </ul>
                     </article>
-                </div>
-            </div>
-        </section>
 
-        <!-- Stats Banner -->
-        <section class="stats-banner" aria-label="Key results">
-            <div class="container">
-                <div class="results-grid">
-                    <div class="result-item">
-                        <span class="result-number">200+</span>
-                        <span class="result-label">Landing Pages Built</span>
-                    </div>
-                    <div class="result-item">
-                        <span class="result-number">40%</span>
-                        <span class="result-label">Avg. Conversion Increase</span>
-                    </div>
-                    <div class="result-item">
-                        <span class="result-number">0.9s</span>
-                        <span class="result-label">Avg. Page Load Time</span>
-                    </div>
-                    <div class="result-item">
-                        <span class="result-number">50+</span>
-                        <span class="result-label">Happy US Clients</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                        </div>
+                        <h3 class="skill-title" data-i18n="skills.blockchain.title">Blockchain</h3>
+                        <p class="skill-description" data-i18n="skills.blockchain.desc">Smart contracts, DApps y soluciones Web3 sobre Ethereum con Solidity y mejores prácticas de seguridad.</p>
+                        <ul class="skill-tags">
+                            <li>Solidity</li><li>Smart Contracts</li><li>Web3</li><li>Ethereum</li>
+                        </ul>
+                    </article>
 
-        <!-- Industries / Work -->
-        <section class="work" id="work" aria-labelledby="work-heading">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Industries We Serve</span>
-                    <h2 id="work-heading" class="section-title">Landing Pages for <span class="gradient-text">Every Business</span></h2>
-                    <p class="section-description">
-                        Tailored solutions across construction, healthcare, retail, dental, and professional services
-                    </p>
-                </div>
-                <div class="work-grid">
-                    <div class="work-card">
-                        <div class="work-preview">
-                            <div class="work-browser">
-                                <div class="browser-dots"><span></span><span></span><span></span></div>
-                                <div class="browser-url">yourconstructioncompany.com</div>
-                            </div>
-                            <div class="work-mockup">
-                                <div class="mock-header"></div>
-                                <div class="mock-hero">
-                                    <div class="mock-line wide"></div>
-                                    <div class="mock-line medium"></div>
-                                    <div class="mock-btn"></div>
-                                </div>
-                                <div class="mock-grid">
-                                    <div class="mock-card"></div>
-                                    <div class="mock-card"></div>
-                                    <div class="mock-card"></div>
-                                </div>
-                            </div>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/><path d="M9 18h6"/><path d="M10 22a2 2 0 0 0 2-2v-2"/><path d="M14 22a2 2 0 0 1-2-2v-2"/></svg>
                         </div>
-                        <div class="work-info">
-                            <span class="work-category">Construction</span>
-                            <h3>Contractor Landing Pages</h3>
-                            <p>Showcase projects, generate qualified leads, and build trust with a professional online presence</p>
-                        </div>
-                    </div>
-
-                    <div class="work-card">
-                        <div class="work-preview">
-                            <div class="work-browser">
-                                <div class="browser-dots"><span></span><span></span><span></span></div>
-                                <div class="browser-url">yourdentalpractice.com</div>
-                            </div>
-                            <div class="work-mockup">
-                                <div class="mock-header"></div>
-                                <div class="mock-hero">
-                                    <div class="mock-line wide"></div>
-                                    <div class="mock-line medium"></div>
-                                </div>
-                                <div class="mock-grid two-col">
-                                    <div class="mock-card tall"></div>
-                                    <div class="mock-card tall"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <span class="work-category">Dental &amp; Healthcare</span>
-                            <h3>Practice Landing Pages</h3>
-                            <p>Patient-friendly designs with online booking integration and service showcase</p>
-                        </div>
-                    </div>
-
-                    <div class="work-card">
-                        <div class="work-preview">
-                            <div class="work-browser">
-                                <div class="browser-dots"><span></span><span></span><span></span></div>
-                                <div class="browser-url">youronlinestore.com</div>
-                            </div>
-                            <div class="work-mockup">
-                                <div class="mock-header"></div>
-                                <div class="mock-hero split">
-                                    <div>
-                                        <div class="mock-line wide"></div>
-                                        <div class="mock-line medium"></div>
-                                        <div class="mock-btn"></div>
-                                    </div>
-                                    <div class="mock-img"></div>
-                                </div>
-                                <div class="mock-grid">
-                                    <div class="mock-card"></div>
-                                    <div class="mock-card"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <span class="work-category">Retail &amp; E-Commerce</span>
-                            <h3>Store Landing Pages</h3>
-                            <p>Product-focused designs that drive sales with integrated payment and inventory display</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Process Section -->
-        <section class="process" id="process" aria-labelledby="process-heading">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">How We Work</span>
-                    <h2 id="process-heading" class="section-title">From Idea to <span class="gradient-text">Launch</span> in 5 Steps</h2>
-                    <p class="section-description">
-                        A proven process refined across hundreds of projects
-                    </p>
-                </div>
-                <div class="process-steps">
-                    <div class="process-step">
-                        <div class="step-number">01</div>
-                        <div class="step-line"></div>
-                        <div class="step-content">
-                            <h3>Discovery &amp; Strategy</h3>
-                            <p>We learn about your business, target audience, and goals. We analyze competitors and define the conversion strategy before a single pixel is designed.</p>
-                            <ul>
-                                <li>Brand &amp; audience discovery</li>
-                                <li>Competitor analysis</li>
-                                <li>Conversion goal mapping</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">02</div>
-                        <div class="step-line"></div>
-                        <div class="step-content">
-                            <h3>Wireframing &amp; Design</h3>
-                            <p>We create wireframes and high-fidelity mockups focused on user flow and conversion. You review and approve before development starts.</p>
-                            <ul>
-                                <li>UX wireframing</li>
-                                <li>High-fidelity UI design</li>
-                                <li>Unlimited revision rounds</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">03</div>
-                        <div class="step-line"></div>
-                        <div class="step-content">
-                            <h3>Development</h3>
-                            <p>Clean, semantic code built for speed. Every page is hand-coded for optimal performance, accessibility, and SEO best practices.</p>
-                            <ul>
-                                <li>Semantic HTML5 / CSS3 / JS</li>
-                                <li>Mobile-first responsive</li>
-                                <li>Performance optimized</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">04</div>
-                        <div class="step-line"></div>
-                        <div class="step-content">
-                            <h3>Testing &amp; Optimization</h3>
-                            <p>Rigorous QA across devices and browsers. Core Web Vitals audit, SEO validation, and conversion tracking setup before launch.</p>
-                            <ul>
-                                <li>Cross-browser &amp; device testing</li>
-                                <li>Core Web Vitals audit</li>
-                                <li>Analytics &amp; tracking setup</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="process-step">
-                        <div class="step-number">05</div>
-                        <div class="step-content">
-                            <h3>Launch &amp; Monitor</h3>
-                            <p>Smooth deployment to your hosting. We monitor performance, track conversions, and provide ongoing support to keep results climbing.</p>
-                            <ul>
-                                <li>Deployment &amp; go-live</li>
-                                <li>30-day performance monitoring</li>
-                                <li>Ongoing optimization available</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials -->
-        <section class="testimonials" aria-labelledby="testimonials-heading">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Testimonials</span>
-                    <h2 id="testimonials-heading" class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
-                </div>
-                <div class="testimonials-grid">
-                    <blockquote class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Our construction company went from zero online leads to 15+ qualified project inquiries per week. The landing page clearly shows our portfolio and makes it easy for clients to request estimates."</p>
-                        <footer>
-                            <strong>Residential &amp; Commercial Contractor</strong>
-                            <span>Salt Lake City, UT</span>
-                        </footer>
-                    </blockquote>
-                    <blockquote class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"As a dental practice, we needed a page that felt warm and professional. The online booking integration works flawlessly and new patient inquiries increased significantly within the first month."</p>
-                        <footer>
-                            <strong>Family Dental Practice</strong>
-                            <span>Provo, UT</span>
-                        </footer>
-                    </blockquote>
-                    <blockquote class="testimonial-card">
-                        <div class="testimonial-stars">★★★★★</div>
-                        <p>"Our retail store landing page now converts browsers into buyers. The product showcase layout and mobile experience are exactly what our customers needed. Professional work from start to finish."</p>
-                        <footer>
-                            <strong>Local Retail Store Owner</strong>
-                            <span>Ogden, UT</span>
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="faq" aria-labelledby="faq-heading">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">FAQ</span>
-                    <h2 id="faq-heading" class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-                </div>
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary>How long does it take to build a landing page?</summary>
-                        <p>Standard landing pages are delivered in 5-7 business days. More complex projects with custom integrations or multiple pages typically take 7-10 business days. We'll give you a precise timeline during the discovery phase.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Do you offer revisions?</summary>
-                        <p>Yes. We include revision rounds to make sure the final result matches your vision. We work closely with you throughout the entire process to ensure your complete satisfaction.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Will my landing page work on mobile devices?</summary>
-                        <p>Absolutely. Every landing page we build follows a mobile-first approach and is thoroughly tested across iOS, Android, and all major browsers. Mobile responsiveness is a core deliverable, not an add-on.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>What about SEO and page speed?</summary>
-                        <p>SEO and performance are built into our development process. We use semantic HTML, schema markup, optimized assets, and CDN delivery. We target Google PageSpeed scores of 90+ on both mobile and desktop.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Do you offer ongoing support after launch?</summary>
-                        <p>Yes. We offer maintenance and support packages to keep your landing page updated, secure, and performing at its best. This includes content updates, performance monitoring, and continuous improvements.</p>
-                    </details>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA / Contact -->
-        <section class="cta" id="contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <div class="cta-content">
-                    <span class="section-tag">Get Started</span>
-                    <h2 id="contact-heading" class="cta-title">Ready to <span class="gradient-text">Grow Your Business?</span></h2>
-                    <p class="cta-description">
-                        Tell us about your project and we'll get back to you within 24 hours with a custom proposal.
-                    </p>
-                    <div class="cta-contact">
-                        <a href="mailto:buriticamaicol@outlook.com" class="btn btn-primary btn-lg">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            buriticamaicol@outlook.com
-                        </a>
-                        <span class="cta-or">or call</span>
-                        <span class="cta-phone">(385) 317-1427</span>
-                    </div>
+                        <h3 class="skill-title" data-i18n="skills.containers.title">Contenedores</h3>
+                        <p class="skill-description" data-i18n="skills.containers.desc">Empaquetado, orquestación y despliegue de servicios con Docker y Kubernetes en entornos productivos.</p>
+                        <ul class="skill-tags">
+                            <li>Docker</li><li>Kubernetes</li><li>Helm</li><li>Registry</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <!-- Contact / Footer -->
+    <footer class="footer" id="contacto" role="contentinfo">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="nav-logo" aria-label="MBO Studio Home">
-                        <h3>MBO</h3>
-                        <span class="logo-sub">Studio</span>
+            <div class="footer-content">
+                <span class="section-tag" data-i18n="contact.tag">Contacto</span>
+                <h2 class="footer-title"><span data-i18n="contact.title">Hablemos de tu</span> <span class="gradient-text" data-i18n="contact.titleAccent">próximo proyecto</span></h2>
+                <p class="footer-description" data-i18n="contact.description">
+                    Estoy disponible para colaboraciones, proyectos freelance o roles full-time. Respondo en menos de 24 horas.
+                </p>
+                <a href="mailto:buriticamaicol@outlook.com" class="btn btn-primary btn-lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <span data-i18n="contact.email">Envíame un email</span>
+                </a>
+                <div class="footer-links">
+                    <a href="https://github.com/revolutionnnn" target="_blank" rel="noopener" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1.8 1.7.8 1.7.6-1.1 1.9-.8 2.4-.6.1.9.4 1.5.7 1.8-2.5.3-5.2 1.3-5.2 5.7 0 1.3.5 2.3 1.2 3.1-.1.3-.5 1.5.1 3.1 0 0 1 .3 3.3-1.2 1 .3 2 .4 3 .4s2-.1 3-.4c2.3 1.5 3.3 1.2 3.3 1.2.6-1.6.2-2.8.1-3.1.7-.8 1.2-1.8 1.2-3.1 0-4.4-2.7-5.4-5.2-5.7.4-.3.7-1 .7-2v-2c0-.3.2-.7.8-.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                        <span>GitHub</span>
                     </a>
-                    <p>Custom landing pages built for conversion. Serving businesses across the United States with high-performance, SEO-optimized landing page solutions.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Landing Page Design</a></li>
-                        <li><a href="#services">Development</a></li>
-                        <li><a href="#services">SEO Optimization</a></li>
-                        <li><a href="#services">A/B Testing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#work">Industries</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="mailto:buriticamaicol@outlook.com">buriticamaicol@outlook.com</a></li>
-                        <li>(385) 317-1427</li>
-                        <li>United States</li>
-                    </ul>
+                    <a href="https://www.linkedin.com/in/michael-buritica/" target="_blank" rel="noopener" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5zM8 19H5v-9h3v9zM6.5 8.2c-.97 0-1.75-.79-1.75-1.76S5.53 4.7 6.5 4.7s1.75.79 1.75 1.76S7.47 8.2 6.5 8.2zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93s-1.62.5-1.62 1.93V19h-3v-9h2.9v1.3h.04c.34-.7 1.32-1.5 2.66-1.5 2.86 0 3.4 1.8 3.4 4.3V19z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:buriticamaicol@outlook.com" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span>Email</span>
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 MBO Studio. All rights reserved. | Proudly serving businesses across the United States.</p>
+                <p>&copy; <span id="year">2025</span> Michael Buritica · <span data-i18n="footer.rights">Todos los derechos reservados</span></p>
             </div>
         </div>
     </footer>
