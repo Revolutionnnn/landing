@@ -193,6 +193,8 @@ function animateCounters() {
                     const target = parseInt(counter.getAttribute('data-target'));
                     const suffix = counter.parentElement.querySelector('.stat-label');
                     const isPercent = suffix && suffix.classList.contains('stat-percent');
+                    const isPlus = suffix && suffix.classList.contains('stat-plus');
+                    const symbol = isPercent ? '%' : (isPlus ? '+' : '');
                     const duration = 2000;
                     const steps = 60;
                     const increment = target / steps;
@@ -202,10 +204,10 @@ function animateCounters() {
                     const interval = setInterval(() => {
                         step++;
                         current = Math.min(Math.round(increment * step), target);
-                        counter.textContent = current + (isPercent ? '%' : '+');
+                        counter.textContent = current + symbol;
 
                         if (step >= steps) {
-                            counter.textContent = target + (isPercent ? '%' : '+');
+                            counter.textContent = target + symbol;
                             clearInterval(interval);
                         }
                     }, duration / steps);
